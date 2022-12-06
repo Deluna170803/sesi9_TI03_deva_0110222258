@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+</head>
+<body>
+    <label for="jumlah">Menghitung Perjumlahan</label>
+    <input type="number" id="angka1">
+    +
+    <input type="number" id="angka2">
+    =
+
+    <span id="hasil"></span>
+
+    <button onclick="penjumlahan()">Hasil</button>
+    
+
+    <script>
+        function penjumlahan(){
+            let angka1= parseInt (document.getElementById('angka1').value);
+            let angka2= parseInt (document.getElementById('angka2').value);
+            let hasil = parseInt (angka1+angka2)
+            
+            document.getElementById('hasil').innerHTML = hasil;
+    
+        }
+    </script>
+    
+</body>
+</html>
